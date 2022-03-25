@@ -1,0 +1,270 @@
+<h1 id='markets-api'>Markets API</h1><h2 id='get-all-markets'>Get all markets</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight plaintext"><code>GET /markets
+</code></pre></div>
+
+<blockquote>
+<p>Response</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SOL/USDC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"baseSymbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SOL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"baseVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">1173553.1999999878</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quoteVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">117994677.27060008</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"change1h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0054051952092082495</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"change24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0903416938145091</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"changeBod"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.012630960540487676</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.42</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"midPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.52199999999999</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"volumeUsd24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">117994677.27060008</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"low24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">94.539</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"high24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">104.577</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bestBid"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.499</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bestAsk"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.545</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"posSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">3454867.5176999993</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"negSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">3941318.4862000006</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"markPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.51608</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maxLeverage"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Market name</td>
+</tr>
+<tr>
+<td>baseSymbol</td>
+<td>number</td>
+<td>Symbol of market&#39;s base currency</td>
+</tr>
+<tr>
+<td>baseVolume24h</td>
+<td>number</td>
+<td>24 hour volume (measured in base)</td>
+</tr>
+<tr>
+<td>quoteVolume24h</td>
+<td>number</td>
+<td>24 hour volume (measured in quote)</td>
+</tr>
+<tr>
+<td>change1h</td>
+<td>number</td>
+<td>Change over the last hour</td>
+</tr>
+<tr>
+<td>change24h</td>
+<td>number</td>
+<td>Change over the last 24 hours</td>
+</tr>
+<tr>
+<td>changeBod</td>
+<td>number</td>
+<td>Change since the beginning of the day (where the beginning of the day is set by UTC+0)</td>
+</tr>
+<tr>
+<td>last</td>
+<td>number</td>
+<td>Last traded price</td>
+</tr>
+<tr>
+<td>midPrice</td>
+<td>number</td>
+<td>Current midpoint price</td>
+</tr>
+<tr>
+<td>volumeUsd24h</td>
+<td>number</td>
+<td>Market volume over the last 24 hours in USD</td>
+</tr>
+<tr>
+<td>low24h</td>
+<td>number</td>
+<td>Lowest price in the past 24 hours</td>
+</tr>
+<tr>
+<td>high24h</td>
+<td>number</td>
+<td>Highest price in the past 24 hours</td>
+</tr>
+<tr>
+<td>bestBid</td>
+<td>number</td>
+<td>Current best bid</td>
+</tr>
+<tr>
+<td>bestAsk</td>
+<td>number</td>
+<td>Current best ask</td>
+</tr>
+<tr>
+<td>posSlipLiq2pct</td>
+<td>number</td>
+<td>PublicKey of wallet owner</td>
+</tr>
+<tr>
+<td>negSlipLiq2pct</td>
+<td>number</td>
+<td>PublicKey of wallet owner</td>
+</tr>
+<tr>
+<td>markPrice</td>
+<td>number</td>
+<td>Current oracle price for base asset</td>
+</tr>
+<tr>
+<td>maxLeverage</td>
+<td>number</td>
+<td>Maximum leverage for the market</td>
+</tr>
+</tbody></table>
+<h2 id='get-single-market'>Get single market</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight plaintext"><code>GET /markets/{marketName}
+</code></pre></div>
+
+<blockquote>
+<p>Response</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC/USDC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"baseSymbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"baseVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">270.79170000000323</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">11769429.591779953</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"change1h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0005478903946401893</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"change24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02759332418069922</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"changeBod"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00026818669430359894</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="mi">44011</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"midPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">44006.6</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"volumeUsd24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">11769429.591779953</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"low24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">42688.9</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"high24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">44328.3</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"bestBid"</span><span class="p">:</span><span class="w"> </span><span class="mf">43993.5</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"bestAsk"</span><span class="p">:</span><span class="w"> </span><span class="mf">44019.7</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"posSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">6788290.7422899995</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"negSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">5797121.67498</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"markPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">44016.585</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maxLeverage"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<ul>
+<li>Spot markets should be requested with -SPOT. For example: https://mango-all-markets-api.herokuapp.com/markets/BTC-SPOT</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Market name</td>
+</tr>
+<tr>
+<td>baseSymbol</td>
+<td>number</td>
+<td>Symbol of market&#39;s base currency</td>
+</tr>
+<tr>
+<td>baseVolume24h</td>
+<td>number</td>
+<td>24 hour volume (measured in base)</td>
+</tr>
+<tr>
+<td>quoteVolume24h</td>
+<td>number</td>
+<td>24 hour volume (measured in quote)</td>
+</tr>
+<tr>
+<td>change1h</td>
+<td>number</td>
+<td>Change over the last hour</td>
+</tr>
+<tr>
+<td>change24h</td>
+<td>number</td>
+<td>Change over the last 24 hours</td>
+</tr>
+<tr>
+<td>changeBod</td>
+<td>number</td>
+<td>Change since the beginning of the day (where the beginning of the day is set by UTC+0)</td>
+</tr>
+<tr>
+<td>last</td>
+<td>number</td>
+<td>Last traded price</td>
+</tr>
+<tr>
+<td>midPrice</td>
+<td>number</td>
+<td>Current midpoint price</td>
+</tr>
+<tr>
+<td>volumeUsd24h</td>
+<td>number</td>
+<td>Market volume over the last 24 hours in USD</td>
+</tr>
+<tr>
+<td>low24h</td>
+<td>number</td>
+<td>Lowest price in the past 24 hours</td>
+</tr>
+<tr>
+<td>high24h</td>
+<td>number</td>
+<td>Highest price in the past 24 hours</td>
+</tr>
+<tr>
+<td>bestBid</td>
+<td>number</td>
+<td>Current best bid</td>
+</tr>
+<tr>
+<td>bestAsk</td>
+<td>number</td>
+<td>Current best ask</td>
+</tr>
+<tr>
+<td>posSlipLiq2pct</td>
+<td>number</td>
+<td>PublicKey of wallet owner</td>
+</tr>
+<tr>
+<td>negSlipLiq2pct</td>
+<td>number</td>
+<td>PublicKey of wallet owner</td>
+</tr>
+<tr>
+<td>markPrice</td>
+<td>number</td>
+<td>Current oracle price for base asset</td>
+</tr>
+<tr>
+<td>maxLeverage</td>
+<td>number</td>
+<td>Maximum leverage for the market</td>
+</tr>
+</tbody></table>

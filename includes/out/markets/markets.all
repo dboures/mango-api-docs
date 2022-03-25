@@ -1,0 +1,31 @@
+<blockquote>
+<p>Request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /markets
+</code></pre></div>
+<blockquote>
+<p>Response</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SOL/USDC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"baseSymbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SOL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"baseVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">1173553.1999999878</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quoteVolume24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">117994677.27060008</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"change1h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0054051952092082495</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"change24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0903416938145091</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"changeBod"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.012630960540487676</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.42</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"midPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.52199999999999</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"volumeUsd24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">117994677.27060008</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"low24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">94.539</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"high24h"</span><span class="p">:</span><span class="w"> </span><span class="mf">104.577</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bestBid"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.499</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bestAsk"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.545</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"posSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">3454867.5176999993</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"negSlipLiq2pct"</span><span class="p">:</span><span class="w"> </span><span class="mf">3941318.4862000006</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"markPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">103.51608</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maxLeverage"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
