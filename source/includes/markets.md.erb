@@ -1,0 +1,54 @@
+# Markets API
+
+## Get all markets
+
+<%= partial "includes/out/markets/markets.all.md.erb" %>
+
+Name | Type | Description
+---- | ---- | --------
+name | string | Market name
+baseSymbol | number | Symbol of market's base currency
+baseVolume24h | number | 24 hour volume (measured in base)
+quoteVolume24h | number | 24 hour volume (measured in quote)
+change1h | number | Change over the last hour
+change24h | number | Change over the last 24 hours
+changeBod | number | Change since the beginning of the day (where the beginning of the day is set by UTC+0)
+last | number | Last traded price
+midPrice | number | Current midpoint price
+volumeUsd24h | number | Market volume over the last 24 hours in USD
+low24h | number | Lowest price in the past 24 hours
+high24h | number | Highest price in the past 24 hours
+bestBid | number | Current best bid
+bestAsk | number | Current best ask
+posSlipLiq2pct | number | PublicKey of wallet owner
+negSlipLiq2pct | number | PublicKey of wallet owner
+markPrice | number | Current oracle price for base asset
+maxLeverage | number | Maximum leverage for the market
+
+
+## Get single market
+
+<%= partial "includes/out/markets/markets.single.md.erb" %>
+
+* Spot markets should be requested with -SPOT. For example: https://mango-all-markets-api.herokuapp.com/markets/BTC-SPOT
+
+Name | Type | Description
+---- | ---- | --------
+name | string | Market name
+baseSymbol | number | Symbol of market's base currency
+baseVolume24h | number | 24 hour volume (measured in base)
+quoteVolume24h | number | 24 hour volume (measured in quote)
+change1h | number | Change over the last hour
+change24h | number | Change over the last 24 hours
+changeBod | number | Change since the beginning of the day (where the beginning of the day is set by UTC+0)
+last | number | Last traded price
+midPrice | number | Current midpoint price
+volumeUsd24h | number | Market volume over the last 24 hours in USD
+low24h | number | Lowest price in the past 24 hours
+high24h | number | Highest price in the past 24 hours
+bestBid | number | Current best bid
+bestAsk | number | Current best ask
+posSlipLiq2pct | number | PublicKey of wallet owner
+negSlipLiq2pct | number | PublicKey of wallet owner
+markPrice | number | Current oracle price for base asset
+maxLeverage | number | Maximum leverage for the market
